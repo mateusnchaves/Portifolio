@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mateus Chaves — Developer / Automation / Data</title>
+    <meta name="description" content="Portfólio de Mateus Chaves, estudante de Análise e Desenvolvimento de Sistemas. Desenvolvimento web, automação de processos e dados.">
+    <meta name="author" content="Mateus Novais Chaves">
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#dbdbdb">
+    <link rel="canonical" href="https://mateusnchaves.github.io/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Mateus Chaves">
+    <meta property="og:title" content="Mateus Chaves — Developer / Automation / Data">
+    <meta property="og:description" content="Desenvolvimento web, automação de processos e dados.">
+    <meta property="og:url" content="https://mateusnchaves.github.io/">
+    <meta property="og:image" content="https://mateusnchaves.github.io/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Mateus Chaves — Developer / Automation / Data">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+    <link rel="stylesheet" href="src/styles/tokens.css">
+    <link rel="stylesheet" href="src/styles/base.css">
+    <link rel="stylesheet" href="src/styles/layout.css">
+    <link rel="stylesheet" href="src/styles/components.css">
+    <link rel="stylesheet" href="src/styles/sections.css">
+
+    <script>document.documentElement.classList.add('js');</script>
+    <script type="module" src="src/main.js"></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mateus Novais Chaves",
+        "alternateName": "Mateus Chaves",
+        "url": "https://mateusnchaves.github.io/",
+        "email": "mailto:mateusnchaves07@gmail.com",
+        "jobTitle": "Aprendiz de Operações de Serviços",
+        "worksFor": { "@type": "Organization", "name": "Imbera Brasil" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Itu", "addressRegion": "SP", "addressCountry": "BR" },
+        "knowsAbout": ["Desenvolvimento web", "Automação de processos", "Dados"],
+        "sameAs": ["https://github.com/mateusnchaves", "https://www.linkedin.com/in/mateusnchaves"]
+      }
+    </script>
+  </head>
+
+  <body>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false">
+      <defs>
+        <symbol id="icon-arrow-ne" viewBox="0 0 16 16">
+          <path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" />
+        </symbol>
+        <symbol id="icon-arrow-e" viewBox="0 0 16 16">
+          <path d="M2.5 8H13M8.5 3.5 13 8l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" />
+        </symbol>
+        <symbol id="icon-arrow-s" viewBox="0 0 16 16">
+          <path d="M8 2.5V13M3.5 8.5 8 13l4.5-4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" />
+        </symbol>
+        <symbol id="icon-arrow-n" viewBox="0 0 16 16">
+          <path d="M8 13.5V3M3.5 7.5 8 3l4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" />
+        </symbol>
+        <symbol id="icon-plus" viewBox="0 0 16 16">
+          <path d="M8 2.5v11M2.5 8h11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" />
+        </symbol>
+      </defs>
+    </svg>
+
+    <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+    <header class="site-header" data-header>
+      <div class="container site-header__inner">
+        <a class="brand" href="#top"><span class="brand__mark" aria-hidden="true"></span>Mateus Chaves</a>
+        <p class="site-header__current meta" aria-hidden="true" data-current-section>00 Index</p>
+        <button
+          class="menu-toggle meta"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          data-menu-toggle
+          data-label-expanded="Fechar"
+          data-label-collapsed="Menu"
+        >Menu</button>
+        <nav class="site-nav" id="site-nav" aria-label="Seções" data-nav>
+          <ol class="site-nav__list">
+            <li><a class="site-nav__link" href="#work"><span class="site-nav__index">01</span><span lang="en" data-label>Work</span></a></li>
+            <li><a class="site-nav__link" href="#experience"><span class="site-nav__index">02</span><span lang="en" data-label>Experience</span></a></li>
+            <li><a class="site-nav__link" href="#capabilities"><span class="site-nav__index">03</span><span lang="en" data-label>Capabilities</span></a></li>
+            <li><a class="site-nav__link" href="#about"><span class="site-nav__index">04</span><span lang="en" data-label>About</span></a></li>
+            <li><a class="site-nav__link" href="#currently"><span class="site-nav__index">05</span><span lang="en" data-label>Currently</span></a></li>
+            <li><a class="site-nav__link" href="#contact"><span class="site-nav__index">06</span><span lang="en" data-label>Contact</span></a></li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title" data-section>
+        <div class="container hero__inner">
+          <div class="hero__top grid">
+            <p class="hero__status status meta" data-intro style="--i: 0">
+              <span class="status__dot" aria-hidden="true"></span>Aberto a oportunidades em desenvolvimento
+            </p>
+            <p class="hero__location meta" data-intro style="--i: 1">Itu, SP — Brasil</p>
+          </div>
+
+          <h1 class="hero__title" id="hero-title">
+            <span class="hero__line">Mateus</span>
+            <span class="hero__line">Chaves</span>
+          </h1>
+
+          <div class="hero__body grid">
+            <p class="hero__role" lang="en" data-intro style="--i: 2">
+              <span class="hero__role-part">Developer <span class="hero__role-sep">/</span></span>
+              <span class="hero__role-part">Automation <span class="hero__role-sep">/</span></span>
+              <span class="hero__role-part">Data</span>
+            </p>
+            <div class="hero__intro" data-intro style="--i: 3">
+              <p class="hero__statement">
+                Desenvolvo interfaces web, automações e dashboards que reduzem trabalho manual em processos reais.
+              </p>
+              <div class="hero__actions">
+                <a class="button" href="#work">
+                  Ver projetos
+                  <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-s"></use></svg>
+                </a>
+                <a class="link-arrow" href="#contact">
+                  Entrar em contato
+                  <svg class="icon icon--east" aria-hidden="true" focusable="false"><use href="#icon-arrow-e"></use></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <dl class="hero__facts grid" data-intro style="--i: 4">
+            <div class="fact">
+              <dt class="meta">Atualmente</dt>
+              <dd>Aprendiz de Operações de Serviços na Imbera Brasil</dd>
+            </div>
+            <div class="fact">
+              <dt class="meta">Formação</dt>
+              <dd>Análise e Desenvolvimento de Sistemas — Facens (02/2025 - Atual)</dd>
+            </div>
+            <div class="fact">
+              <dt class="meta">Stack</dt>
+              <dd>HTML • CSS • JavaScript • TypeScript • Angular • Bootstrap • Python • SQL • Power BI • Git • IA</dd>
+            </div>
+            <div class="fact">
+              <dt class="meta">Links</dt>
+              <dd class="fact__links">
+                <a class="link-arrow" href="https://github.com/mateusnchaves" target="_blank" rel="me noopener noreferrer">
+                  <span>GitHub<span class="visually-hidden"> (abre em nova aba)</span></span>
+                  <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-ne"></use></svg>
+                </a>
+                <a class="link-arrow" href="https://www.linkedin.com/in/mateusnchaves" target="_blank" rel="me noopener noreferrer">
+                  <span>LinkedIn<span class="visually-hidden"> (abre em nova aba)</span></span>
+                  <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-ne"></use></svg>
+                </a>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section" id="work" aria-labelledby="work-title" data-section>
+        <div class="container">
+          <header class="section-head grid" data-reveal>
+            <p class="section-head__label">
+              <span class="section-head__index meta">(01)</span>
+              <span class="meta" data-meta="projects"></span>
+            </p>
+            <h2 class="section-head__title" id="work-title" lang="en">Selected Work</h2>
+            <p class="section-head__lede">Projetos apresentados como cases, do problema à solução.</p>
+          </header>
+          <div data-mount="projects">
+            <noscript>
+              <p>Os projetos são carregados com JavaScript. Veja os repositórios no <a href="https://github.com/mateusnchaves">GitHub</a>.</p>
+            </noscript>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience" aria-labelledby="experience-title" data-section>
+        <div class="container">
+          <header class="section-head grid" data-reveal>
+            <p class="section-head__label">
+              <span class="section-head__index meta">(02)</span>
+              <span class="meta" data-meta="experience"></span>
+            </p>
+            <h2 class="section-head__title" id="experience-title" lang="en">Experience</h2>
+          </header>
+          <div data-mount="experience">
+            <noscript>
+              <p>A experiência profissional é carregada com JavaScript. Veja o perfil no <a href="https://www.linkedin.com/in/mateusnchaves">LinkedIn</a>.</p>
+            </noscript>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="capabilities" aria-labelledby="capabilities-title" data-section>
+        <div class="container">
+          <header class="section-head grid" data-reveal>
+            <p class="section-head__label">
+              <span class="section-head__index meta">(03)</span>
+              <span class="meta" data-meta="capabilities"></span>
+            </p>
+            <h2 class="section-head__title" id="capabilities-title" lang="en">Capabilities</h2>
+            <p class="section-head__lede">Áreas de atuação, cada uma ligada a onde já foi aplicada na prática.</p>
+          </header>
+          <div data-mount="capabilities"></div>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-title" data-section>
+        <div class="container">
+          <header class="section-head grid" data-reveal>
+            <p class="section-head__label">
+              <span class="section-head__index meta">(04)</span>
+            </p>
+            <h2 class="section-head__title" id="about-title" lang="en">About</h2>
+          </header>
+
+          <div class="about grid">
+            <p class="about__lead" data-reveal>Entendo o processo antes de escrever o código.</p>
+
+            <div class="about__text" data-reveal>
+              <p>
+                Sou estudante de Análise e Desenvolvimento de Sistemas na Facens e trabalho na Imbera Brasil desde 2025 —
+                primeiro em Controles Internos, hoje em Operações de Serviços.
+              </p>
+              <p>
+                Na operação, passei a aplicar desenvolvimento no dia a dia: um dashboard web para acompanhar devoluções e uma
+                automação que preenche devoluções de notas fiscais no sistema, com validação dos itens. Meu foco é encontrar
+                onde há retrabalho e construir ferramentas simples para eliminá-lo.
+              </p>
+              <p>
+                Agora busco uma oportunidade em desenvolvimento para crescer tecnicamente em um time, trabalhando com web,
+                automação e dados.
+              </p>
+            </div>
+
+            <dl class="about__facts" data-reveal>
+              <div class="about__fact">
+                <dt class="meta">Formação</dt>
+                <dd>Análise e Desenvolvimento de Sistemas</dd>
+                <dd>Centro Universitário Facens · conclusão prevista para Jul 2027</dd>
+              </div>
+              <div class="about__fact">
+                <dt class="meta">Certificações</dt>
+                <dd>Expert Web Dev — SuperGeeks</dd>
+                <dd>Power Apps: Formação Básica</dd>
+                <dd>Excel: Fórmulas e Funções</dd>
+              </div>
+              <div class="about__fact">
+                <dt class="meta">Idiomas</dt>
+                <dd>Português — nativo</dd>
+                <dd>Inglês — Centro Municipal de Línguas (CEMUL)</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="currently" aria-labelledby="currently-title" data-section>
+        <div class="container">
+          <header class="section-head grid" data-reveal>
+            <p class="section-head__label">
+              <span class="section-head__index meta">(05)</span>
+              <span class="meta" data-meta="currently"></span>
+            </p>
+            <h2 class="section-head__title" id="currently-title" lang="en">Currently</h2>
+          </header>
+          <div data-mount="currently"></div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title" data-section>
+        <div class="container">
+          <header class="section-head grid">
+            <p class="section-head__label">
+              <span class="section-head__index meta">(06)</span>
+              <span class="meta" lang="en">Contact</span>
+            </p>
+            <h2 class="section-head__title contact__title" id="contact-title" lang="en" data-reveal>
+              <span>Let’s build</span>
+              <span>something</span>
+              <span>useful.</span>
+            </h2>
+          </header>
+
+          <div class="contact__body grid">
+            <div class="contact__block contact__block--email" data-reveal>
+              <p class="meta">Email</p>
+              <div class="contact__email">
+                <a class="contact__email-link" href="mailto:mateusnchaves07@gmail.com">mateusnchaves07@gmail.com</a>
+                <button
+                  class="contact__copy"
+                  type="button"
+                  hidden
+                  data-copy="mateusnchaves07@gmail.com"
+                  data-copied-label="Copiado"
+                  data-copied-message="Email copiado para a área de transferência."
+                >Copiar</button>
+                <span class="visually-hidden" role="status" data-copy-status></span>
+              </div>
+            </div>
+
+            <div class="contact__block contact__block--links" data-reveal>
+              <p class="meta">Perfis</p>
+              <ul class="contact__links">
+                <li>
+                  <a class="link-arrow" href="https://github.com/mateusnchaves" target="_blank" rel="me noopener noreferrer">
+                    <span>GitHub<span class="visually-hidden"> (abre em nova aba)</span></span>
+                    <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-ne"></use></svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="link-arrow" href="https://www.linkedin.com/in/mateusnchaves" target="_blank" rel="me noopener noreferrer">
+                    <span>LinkedIn<span class="visually-hidden"> (abre em nova aba)</span></span>
+                    <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-ne"></use></svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="grid site-footer__inner">
+          <p class="site-footer__item meta">© <span data-year>2026</span> Mateus Novais Chaves</p>
+          <p class="site-footer__item meta">HTML, CSS e JavaScript, sem frameworks</p>
+          <div class="site-footer__actions meta">
+            <button type="button" aria-pressed="false" data-grid-toggle>Grid <kbd>G</kbd></button>
+            <a href="#top">
+              Voltar ao topo
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-n"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="grid-overlay" aria-hidden="true" hidden data-grid-overlay></div>
+  </body>
+</html>

@@ -17,6 +17,39 @@ import { todo } from '../lib/todo.js';
  *               (1600 × 1000 px; veja assets/projects/README.md)
  */
 export const projects = [
+   {
+    id: 'finora',
+    title: 'Finora',
+    featured: true,
+    category: 'Aplicação Web Full-Stack',
+    year: '2026',
+    summary:
+      'App web de gestão financeira pessoal que mostra para onde vai o seu dinheiro e acompanha seus investimentos com cotações reais.',
+    stack: [
+      'Next.js 16',
+      'TypeScript',
+      'Tailwind CSS 4',
+      'Supabase (Postgres, Auth, RLS, pg_cron)',
+      'Zod',
+      'Vitest',
+      'GitHub Actions',
+      'Vercel',
+    ],
+    problem:
+      'Controlar finanças costuma exigir planilhas espalhadas: os gastos ficam num lugar, os investimentos em outro, e ninguém sabe ao certo para onde o dinheiro foi no mês nem quanto vale o patrimônio hoje.',
+    solution:
+      'O Finora junta tudo em um só lugar. Mostra receitas, despesas e gastos por categoria, avisa quando um orçamento está perto do limite e lança contas recorrentes sozinho. Importa extratos OFX/CSV com categorização automática e detecção de duplicados. Calcula ações, FIIs, cripto e renda fixa (CDI, Selic e IPCA do Banco Central) com cotações do dia e preço médio. A segurança fica no banco de dados, com Row Level Security em todas as tabelas.',
+    result:
+      'Projeto em desenvolvimento. O MVP já está funcional, com as 8 fases planejadas concluídas: lançamentos, dashboard, orçamentos, recorrentes, importação de extratos, investimentos, renda fixa e patrimônio total. Tem mais de 100 testes automatizados, CI no GitHub e uma conta demo com dados de exemplo que voltam ao original toda noite. Próximos passos: publicação na Vercel, login com Google e integração com Open Finance.',
+    links: {
+      repo: 'https://github.com/mateusnchaves/Finora',
+      demo: null,
+    },
+    image: {
+      src: './assets/projects/finora.png',
+      alt: 'Tela do Finora mostrando o resumo do mês.',
+    },
+  },
 {
     id: 'smartvagas',
     title: 'Smart Vagas',
@@ -38,7 +71,7 @@ export const projects = [
       demo: 'https://github.com/mateusnchaves/SmartVagas',
     },
     image: {
-      src: './assets/projects/smartvagas_login_1600x1000.png',
+      src: './assets/projects/smartvagas_login.png',
       alt: 'Tela do pátio do Smart Vagas, com o campo de placa no estilo Mercosul e o mapa de vagas em que as livres aparecem em verde claro, as ocupadas em cinza-escuro com a placa e as reservadas em âmbar.',
     },
   },
@@ -63,25 +96,9 @@ export const projects = [
       demo: todo('Link da versão publicada'),
     },
     image: {
-      src: './assets/projects/ecoway.webp',
+      src: './assets/projects/ecoway.png',
       alt: 'Página inicial do EcoWay, com o título "Planeje rotas elétricas com segurança e eficiência" e o resumo de uma rota de São Paulo a Curitiba com duas paradas de recarga.',
     },
   },
-  {
-    id: 'gestaofinanceira',
-    title: 'Gestão Financeira Pessoal',
-    featured: false,
-    category: todo('Categoria'),
-    year: todo('Ano'),
-    summary: todo('O que o projeto faz, em uma ou duas frases.'),
-    stack: todo('Tecnologias utilizadas'),
-    problem: todo('Qual problema o projeto resolve?'),
-    solution: todo('Como o projeto resolve esse problema?'),
-    result: null,
-    links: {
-      repo: todo('Link do repositório no GitHub'),
-      demo: null,
-    },
-    image: null,
-  },
+
 ];
